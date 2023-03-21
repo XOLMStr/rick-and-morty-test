@@ -1,0 +1,31 @@
+.main-img {
+    width: 600px;
+    height: 200px;
+  }
+  .search-char {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 15px 0 60px 0;
+    input {
+      width: 100%;
+      padding: 15px 15px 15px 35px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      font-style: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    img {
+      position: absolute;
+      z-index: 99;
+      margin: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+  .main-img {
+    width: 350px;
+    height: 120px;
+  }
+}
