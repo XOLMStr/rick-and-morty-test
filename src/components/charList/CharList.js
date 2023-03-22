@@ -46,7 +46,7 @@ const CharList = ({inputValue}) => {
 
         return (
             <ul className="char_list">
-                {items}
+                {items.length ? items : <h2>No such character exists</h2>}
             </ul>
         )
     }
