@@ -10,7 +10,7 @@ import './mainPage.scss';
 
 const MainPage = () => {
     const [inputValue, setInputValue] = useState('');
-    window.localStorage.setItem('inputValue', inputValue);
+
     useEffect(() => {
         setInputValue(window.localStorage.getItem('inputValue'));
     }, []);
